@@ -17,7 +17,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: webpostman,
-      link: 'https://webpostman.netlify.app/',
+      link: 'https://web-postman.vercel.app/',
       repo: 'https://github.com/aginCoder/Web-Postman'
     },
     {
