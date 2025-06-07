@@ -1,5 +1,5 @@
 import React from "react";
-import api from "../assets/portfolio/api.jpg";
+import Clinic_Management from "../assets/portfolio/api.jpg";
 import busBooking from "../assets/portfolio/BusBooking.jpg";
 import university from "../assets/portfolio/university.jpg";
 import newWeb from "../assets/portfolio/newWeb.jpg";
@@ -10,9 +10,9 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: api,
-      link: 'https://crypto-info-api.cyclic.app/',
-      repo: 'https://github.com/rahulkarda/crypto-info-api'
+      src: Clinic_Management,
+      link: '#',
+      repo: 'https://github.com/aginCoder/Clinic_Management'
     },
     {
       id: 2,
