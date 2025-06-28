@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/avt.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
@@ -9,15 +9,18 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="small-screen hidden">
+        
+        {/* Ảnh cho màn hình nhỏ */}
+        <div className="small-screen hidden md:hidden block">
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-2xl mx-auto flex-shrink-0"
-            style={{ width: "200%" }}
+            className="rounded-2xl mx-auto w-[70%]"
           />
         </div>
-        <div className="flex flex-col justify-center h-full">
+
+        {/* Nội dung chính */}
+        <div className="flex flex-col justify-center h-full text-center md:text-left">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a Full Stack Web Developer
           </h2>
@@ -40,14 +43,15 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="">
+
+        {/* Ảnh cho màn hình lớn */}
+        <div className="big-screen hidden md:block">
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-2xl mx-auto w-[70%]"
           />
         </div>
-
       </div>
     </div>
   );
